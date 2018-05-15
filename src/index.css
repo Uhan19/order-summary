@@ -1,0 +1,11 @@
+.order-summary {
+  border: 1px solid black;
+  color: #444;
+  font-family: myriad-pro, BogleWeb, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  width: 200px;
+}
+
+[aria-hidden="true"] {
+  visibility: hidden;
+}

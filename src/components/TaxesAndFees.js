@@ -3,8 +3,13 @@ import React from "react";
 const TaxesAndFees = ({ fees }) => {
   return (
     <div>
-      <span>TaxesAndFees</span>
-      <span>${fees}</span>
+      <div>
+        <span>Est. taxes & fees</span>
+        <span>${fees}</span>
+      </div>
+      <div>
+        <span>(Based on 94133)</span>
+      </div>
     </div>
   );
 };
