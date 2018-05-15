@@ -1,21 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Subtotal from "./components/Subtotal";
+import Pickup from "./components/Pickup";
+import TaxAndFees from "./components/TaxesAndFees";
 
-class App extends Component {
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      subtotal: 10,
+      discount: "free",
+      fees: 3,
+    };
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <h1>Purchase Summary</h1>
+        <Subtotal subtotal={this.state.subtotal} />
+        <Pickup discount={this.state.discount} />
+        <TaxAndFees fees={this.state.fees} />
       </div>
     );
   }
 }
-
-export default App;
