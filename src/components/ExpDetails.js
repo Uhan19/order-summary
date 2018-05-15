@@ -1,4 +1,5 @@
 import React from "react";
+import Chair from "../images/walmart-chair.jpeg";
 
 const ExpDetails = props => {
   return (
@@ -12,6 +13,9 @@ const ExpDetails = props => {
         See item details
       </div>
       <div role="region" id="details" aria-hidden={props.isDetailsClosed}>
+        <span>
+          <img src={Chair} />
+        </span>
         <span>
           Essentials by OFM ESS-3085 Racing Style Leather Gaming Chair, Red
         </span>
