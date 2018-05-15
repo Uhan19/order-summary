@@ -1,4 +1,5 @@
 import React from "react";
+import Input from "./Input";
 
 const Promo = props => {
   return (
@@ -12,7 +13,7 @@ const Promo = props => {
         Apply promo code
       </div>
       <div role="region" id="details" aria-hidden={props.isPromoClosed}>
-        <span>Promo</span>
+        <Input subtotal={props.subtotal} promoCode={props.promoCode} />
       </div>
     </div>
   );

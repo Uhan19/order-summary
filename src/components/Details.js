@@ -35,6 +35,8 @@ export default class Details extends Component {
           }}
         />
         <Promo
+          subtotal={this.props.subtotal}
+          promoCode={this.props.promoCode}
           isPromoClosed={this.state.isPromoClosed}
           handleClick={e => {
             this.handleClick(e);

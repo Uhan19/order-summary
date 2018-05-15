@@ -13,6 +13,7 @@ export default class App extends Component {
       subtotal: 10,
       discount: "free",
       fees: 3,
+      promoCode: "musicalchairs",
     };
   }
   render() {
@@ -26,7 +27,10 @@ export default class App extends Component {
           discount={this.state.discount}
           fees={this.state.fees}
         />
-        <Details />
+        <Details
+          promoCode={this.state.promoCode}
+          subtotal={this.state.subtotal}
+        />
       </div>
     );
   }
