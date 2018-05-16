@@ -32,6 +32,7 @@
 
 #pickup-title {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 #pickup-tooltip {
@@ -91,6 +92,7 @@
 
 .expanded-details {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .exp-details-wrapper {
@@ -130,6 +132,7 @@
 .promo {
   cursor: pointer;
   border-top: 1px solid #e6e7e8;
+  text-decoration: underline;
   padding: 10px 0px 10px 0px;
   margin-top: 10px;
 }

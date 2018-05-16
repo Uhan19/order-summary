@@ -10,12 +10,21 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      subtotal: 10,
+      subtotal: 100,
       discount: "free",
-      fees: 3,
+      fees: 8,
       promoCode: "musicalchairs",
     };
+    this.handleDiscount = this.handleDiscount.bind(this);
   }
+
+  handleDiscount() {
+    console.log("triggered");
+    this.setState({
+      subtotal: this.state.subtotal * 0.5,
+    });
+  }
+
   render() {
     return (
       <div className="order-summary">
@@ -30,6 +39,7 @@ export default class App extends Component {
         <Details
           promoCode={this.state.promoCode}
           subtotal={this.state.subtotal}
+          handleDiscount={this.handleDiscount}
         />
       </div>
     );

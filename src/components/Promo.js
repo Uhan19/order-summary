@@ -16,7 +16,10 @@ const Promo = props => {
         <span> {sign}</span>
       </div>
       <div role="region" id="details" aria-hidden={props.isPromoClosed}>
-        <Input subtotal={props.subtotal} promoCode={props.promoCode} />
+        <Input
+          handleDiscount={props.handleDiscount}
+          promoCode={props.promoCode}
+        />
       </div>
     </div>
   );
