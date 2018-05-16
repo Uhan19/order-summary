@@ -29,10 +29,10 @@ export default class Input extends Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <label>
-            <span>Promo code</span>
+            <span id="promo-code-text">Promo code</span>
             <input type="text" onChange={this.handleChange} />
           </label>
-          <input type="submit" value="Apply" />
+          <input className="btn" type="submit" value="Apply" />
         </form>
       </div>
     );

@@ -23,7 +23,7 @@ export default class Pickup extends Component {
         >
           Pickup
         </span>
-        <div style={tipStyle}>
+        <div id="pickup-tooltip" style={tipStyle}>
           Picking up your order in the store helps cut costs, and we pass the
           savings on to you
         </div>

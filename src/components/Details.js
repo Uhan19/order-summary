@@ -6,22 +6,22 @@ export default class Details extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isDetailsClosed: "true",
-      isPromoClosed: "true",
+      isDetailsClosed: true,
+      isPromoClosed: true,
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(e) {
     if (e.target.className === "expanded-details") {
-      this.state.isDetailsClosed === "true"
-        ? this.setState({ isDetailsClosed: "false" })
-        : this.setState({ isDetailsClosed: "true" });
+      this.state.isDetailsClosed
+        ? this.setState({ isDetailsClosed: false })
+        : this.setState({ isDetailsClosed: true });
     }
     if (e.target.className === "promo") {
-      this.state.isPromoClosed === "true"
-        ? this.setState({ isPromoClosed: "false" })
-        : this.setState({ isPromoClosed: "true" });
+      this.state.isPromoClosed === true
+        ? this.setState({ isPromoClosed: false })
+        : this.setState({ isPromoClosed: true });
     }
   }
 

@@ -2,6 +2,8 @@ import React from "react";
 import Chair from "../images/walmart-chair.jpeg";
 
 const ExpDetails = props => {
+  const title = props.isDetailsClosed ? "See" : "Hide";
+  const sign = props.isDetailsClosed ? "[+]" : "[-]";
   return (
     <div>
       <div
@@ -10,7 +12,8 @@ const ExpDetails = props => {
         aria-controls="details"
         aria-expanded={props.isDetailsClosed}
       >
-        See item details
+        {title} item details
+        <span> {sign}</span>
       </div>
       <div role="region" id="details" aria-hidden={props.isDetailsClosed}>
         <div className="exp-details-wrapper">
