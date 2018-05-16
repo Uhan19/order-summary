@@ -1,6 +1,7 @@
 To Run App: 
-1. npm start 
-2. go to localhost:3000
+1. npm install
+2. npm start
+3. go to localhost:3000
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
