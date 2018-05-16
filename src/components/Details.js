@@ -29,6 +29,7 @@ export default class Details extends Component {
     return (
       <div>
         <ExpDetails
+          subtotal={this.props.subtotal}
           isDetailsClosed={this.state.isDetailsClosed}
           handleClick={e => {
             this.handleClick(e);

@@ -1,11 +1,110 @@
 .order-summary {
-  border: 1px solid black;
-  color: #444;
   font-family: myriad-pro, BogleWeb, Helvetica Neue, Helvetica, Arial,
     sans-serif;
-  width: 200px;
+  padding: 15px 16px;
+  width: 188px;
   font-weight: 400;
   font-size: 0.875rem;
+  line-height: 1.5;
+  border: 1px solid #e6e7e8;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+}
+
+.subtotal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+#subtotal-num {
+  font-weight: 600;
+}
+
+.pickup-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 6px 0px 6px 0px;
+}
+
+#pickup-num {
+  font-weight: 600;
+}
+
+.fees-wrapper {
+  margin: 6px 0px 6px 0px;
+  line-height: 1.5;
+}
+
+.fees-container {
+  display: flex;
+  line-height: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#fees-num {
+  font-weight: 600;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #e6e7e8;
+  margin-top: 10px;
+  padding: 10px 0px 10px 0px;
+  font-weight: 700;
+}
+
+#total-title {
+  font-size: 1.25rem;
+}
+
+#total-num {
+  font-size: 1.5rem;
+}
+
+#chair {
+  width: 55px;
+  height: 55px;
+}
+
+.exp-details-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#exp-details-description {
+  word-wrap: break-word;
+}
+
+.exp-details-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#exp-details-footer-num {
+  font-weight: 600;
+  margin-right: 25px;
+}
+
+.exp-details-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 0.75rem;
+  color: #6d6e71;
+}
+
+#exp-details-qty {
+  font-size: 0.75rem;
+  white-space: nowrap;
 }
 
 [aria-hidden="true"] {
