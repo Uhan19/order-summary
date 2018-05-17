@@ -5,7 +5,9 @@ const Total = ({ subtotal, discount, fees }) => {
   return (
     <div className="total-container">
       <span id="total-title">Est. total</span>
-      <span id="total-num">${subtotal + deduction + fees}.00</span>
+      <span id="total-num">
+        ${parseFloat(subtotal + deduction + fees).toFixed(2)}
+      </span>
     </div>
   );
 };

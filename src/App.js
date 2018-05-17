@@ -10,9 +10,9 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      subtotal: 100,
+      subtotal: 100.82,
       discount: "free",
-      fees: 8,
+      fees: 8.34,
       promoCode: "musicalchairs",
     };
     this.handleDiscount = this.handleDiscount.bind(this);
